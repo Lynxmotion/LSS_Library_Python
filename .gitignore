@@ -1,0 +1,6 @@
+# Ignore all release packages
+*.zip
+*.rar
+
+# Ignore all automation
+*.bat
