@@ -37,11 +37,11 @@ while 1:
 	
 	# Display the values in terminal
 	print("\r\n---- Telemetry ----")
-	print("Position  (1/10 deg) = " + pos);
-	print("Speed          (rpm) = " + rpm);
-	print("Curent          (mA) = " + curr);
-	print("Voltage         (mV) = " + volt);
-	print("Temperature (1/10 C) = " + temp);
+	print("Position  (1/10 deg) = " + str(pos));
+	print("Speed          (rpm) = " + str(rpm));
+	print("Curent          (mA) = " + str(curr));
+	print("Voltage         (mV) = " + str(volt));
+	print("Temperature (1/10 C) = " + str(temp));
 	
 	# Wait 1 second
 	time.sleep(1)
