@@ -19,7 +19,7 @@ import lss_const as lssc
 ### Class functions
 def initBus(portName, portBaud):
 	LSS.bus = serial.Serial(portName, portBaud)
-	LSS.bus.timeout = 0.1
+	LSS.bus.timeout = 2 #Increased to avoid loosing late replies
 
 def closeBus():
 	if LSS.bus is not None:
@@ -48,7 +48,7 @@ def genericRead_Blocking_int(id, cmd):
 			if(c.decode("utf-8") == ""):
 				break
 		# Get packet
-		data = LSS.bus.read_until(lssc.LSS_CommandEnd)
+		data = LSS.bus.read_until(lssc.LSS_CommandEnd.encode('utf-8')) #Otherwise (without ".encode('utf-8')") the received LSS_CommandEnd is not recognized by read_until, making it wait until timeout.
 		# Parse packet
 		matches = re.match("(\d{1,3})([A-Z]{1,4})(-?\d{1,18})", data.decode("utf-8"), re.I)
 		# Check if matches are found
@@ -86,7 +86,7 @@ def genericRead_Blocking_str(id, cmd, numChars):
 			if(c.decode("utf-8") == ""):
 				break
 		# Get packet
-		data = LSS.bus.read_until(lssc.LSS_CommandEnd)
+		data = LSS.bus.read_until(lssc.LSS_CommandEnd.encode('utf-8')) #Otherwise (without ".encode('utf-8')") the received LSS_CommandEnd is not recognized by read_until, making it wait until timeout.
 		data = (data[:-1])
 		# Parse packet
 		matches = re.match("(\d{1,3})([A-Z]{1,4})(.{" + str(numChars) + "})", data.decode("utf-8"), re.I)
