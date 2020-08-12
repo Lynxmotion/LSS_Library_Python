@@ -19,7 +19,7 @@ import lss_const as lssc
 ### Class functions
 def initBus(portName, portBaud):
 	LSS.bus = serial.Serial(portName, portBaud)
-	LSS.bus.timeout = 2 #Increased to avoid loosing late replies
+	LSS.bus.timeout = 0.1
 
 def closeBus():
 	if LSS.bus is not None:
