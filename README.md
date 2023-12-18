@@ -1,12 +1,12 @@
 # LSS_Libraries_Python
-Official Lynxmotion Smart Servo (LSS) libraries for Python
+Official Lynxmotion Smart Servo Pro (LSS-P) libraries for Python
 
-Read more about the LSS on our [wiki](https://www.robotshop.com/info/wiki/lynxmotion/view/lynxmotion-smart-servo/).
+Read more about the LSS-PRO on our [wiki](https://wiki.lynxmotion.com/info/wiki/lynxmotion/view/lynxmotion-smart-servo-pro/).
 
-If you want more details about the LSS protocol, go [here](https://www.robotshop.com/info/wiki/lynxmotion/view/lynxmotion-smart-servo/lss-communication-protocol/).
+If you want more details about the LSS-P protocol, go [here](https://wiki.lynxmotion.com/info/wiki/lynxmotion/view/lynxmotion-smart-servo-pro/lss-p-communication-protocol/).
 
-To configure your LSS easily, we recommend you try out the [LSS Config](https://www.robotshop.com/en/lynxmotion-smart-servo-lss-configuration-software.html). More details about it [on the wiki](https://www.robotshop.com/info/wiki/lynxmotion/view/lynxmotion-smart-servo/lss-configuration-software/).
+To configure your LSS-P easily, we recommend you try out the [LSS-P - Configuration Software](https://wiki.lynxmotion.com/info/wiki/lynxmotion/view/lynxmotion-smart-servo-pro/lss-p-configuration-software/).
 
-Purchase any LSS model on [RobotShop.com](https://www.robotshop.com/en/lynxmotion-smart-servos.html) and get [accessories](https://www.robotshop.com/en/lynxmotion-servos-accessories-1.html), too!
+Purchase any PRO model on [RobotShop.com](https://www.robotshop.com/collections/lynxmotion-smart-servos-pro).
 
-Check out blogs, tutorials and post questions on the Robotshop [community site](https://www.robotshop.com/community/).
+Check out blogs, tutorials and post questions on the Robotshop [community site](https://community.robotshop.com/).

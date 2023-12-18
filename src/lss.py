@@ -51,6 +51,7 @@ def genericRead_Blocking_int(id, cmd):
 		data = LSS.bus.read_until(lssc.LSS_CommandEnd.encode('utf-8')) #Otherwise (without ".encode('utf-8')") the received LSS_CommandEnd is not recognized by read_until, making it wait until timeout.
 		# Parse packet
 		matches = re.match("(\d{1,3})([A-Z]{1,4})(-?\d{1,18})", data.decode("utf-8"), re.I)
+		# print(data.decode("utf-8"))
 		# Check if matches are found
 		if(matches is None):
 			return(None)
